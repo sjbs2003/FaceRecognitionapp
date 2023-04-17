@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity() {
 
         @Multipart
         @POST("recognize")
-        suspend fun recognizeFace(
+        fun recognizeFace(
             @Part image: MultipartBody.Part
         ): FaceRecognitionResponse
 
